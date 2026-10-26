@@ -974,6 +974,17 @@ elif app_mode == "📖 Project Documentation & Architecture":
         - **Target Variable:** `LABEL` (`__label1__` = Deceptive/Fake, `__label2__` = Genuine/Truthful).
 
         ---
+        ### 5. Model Performance Results
+        Trained on the Amazon Deception Corpus (80% train / 20% test split, stratified):
+
+        | Model | Accuracy | Precision | Recall | F1-Score |
+        |:---|:---:|:---:|:---:|:---:|
+        | **Logistic Regression** | **65.52%** | **65.54%** | **65.48%** | **65.51%** |
+        | **Multinomial Naive Bayes** | **64.57%** | **64.87%** | **63.57%** | **64.21%** |
+
+        > **Note:** Logistic Regression outperforms Multinomial Naive Bayes on all four evaluation metrics on this balanced binary classification task.
+
+        ---
         ### 5. System Architecture
         ```
         [ Raw Text / CSV Upload ]

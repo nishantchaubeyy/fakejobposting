@@ -43,15 +43,16 @@ This project delivers a high-accuracy, production-ready machine learning system 
 
 ## 📊 4. Model Benchmark & Evaluation Results
 
-Tested on an independent 20% holdout test set (4,200 reviews):
+Trained on **21,000 Amazon reviews** with an 80/20 stratified train-test split:
 
-| Model Algorithm | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Logistic Regression** | **89.3%** | **89.1%** | **89.6%** | **89.3%** | **0.957** |
-| **Linear SVM (Calibrated)** | **88.8%** | **88.5%** | **89.2%** | **88.8%** | **0.952** |
-| **Multinomial Naive Bayes** | **86.7%** | **87.2%** | **86.1%** | **86.6%** | **0.941** |
+| Model Algorithm | Accuracy | Precision | Recall | F1-Score |
+| :--- | :---: | :---: | :---: | :---: |
+| **Logistic Regression** | **65.52%** | **65.54%** | **65.48%** | **65.51%** |
+| **Multinomial Naive Bayes** | **64.57%** | **64.87%** | **63.57%** | **64.21%** |
 
----
+> **Conclusion:** Logistic Regression outperforms Multinomial Naive Bayes on all four evaluation metrics on this balanced binary classification task.
+
+
 
 ## 🏗️ 5. System Architecture
 
